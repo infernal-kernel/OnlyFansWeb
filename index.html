@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exclusive Content | OnlyFans</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="Onlyfans-Logo-2016.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Video de fondo -->
-    <video autoplay muted loop id="bg-video">
-        <source src="fondo.mp4" type="video/mp4">
-    </video>
+    <!-- Música de fondo -->
+    <audio autoplay loop>
+        <source src="musica-elegante.mp3" type="audio/mp3">
+    </audio>
 
     <div class="container">
         <!-- Encabezado con logo y bienvenida -->
@@ -29,6 +29,12 @@
             <a href="https://onlyfans.com/he6him6jim6" class="button">Acceder a OnlyFans</a>
         </div>
 
+        <!-- Contador regresivo -->
+        <div class="countdown">
+            <h3>Oferta VIP termina en:</h3>
+            <p id="timer"></p>
+        </div>
+
         <!-- Beneficios exclusivos -->
         <div class="benefits">
             <h3>¿Qué obtendrás?</h3>
@@ -37,6 +43,13 @@
                 <li>💬 Interacción privada y exclusiva</li>
                 <li>🎁 Sorpresas y experiencias VIP</li>
             </ul>
+        </div>
+
+        <!-- Testimonios -->
+        <div class="testimonials">
+            <h3>Lo que dicen nuestros suscriptores</h3>
+            <p>"El mejor contenido que he visto en mi vida. Vale cada centavo." - <b>Juan P.</b></p>
+            <p>"Una experiencia de lujo y trato VIP. ¡Totalmente recomendado!" - <b>Laura G.</b></p>
         </div>
 
         <!-- Sección VIP -->
@@ -51,16 +64,20 @@
             <a href="https://onlyfans.com/he6him6jim6" class="button">Únete al VIP Club</a>
         </div>
 
+        <!-- Formulario de acceso VIP -->
+        <form class="vip-form">
+            <h3>Accede a una muestra exclusiva</h3>
+            <input type="email" placeholder="Tu correo electrónico" required>
+            <button type="submit">Recibir Acceso VIP</button>
+        </form>
+
         <!-- Enlace a Instagram -->
         <div class="social">
             <a href="https://www.instagram.com/onlyfans.samu_" class="button insta">Sígueme en Instagram</a>
         </div>
     </div>
 
-    <!-- Botón de POlla Voladora -->
-    <a href="" class="polla-button">
-        💬 comete mi polla aqui
-    </a>
+    <script src="script.js"></script>
 
 </body>
 </html>
