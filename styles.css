@@ -1,7 +1,5 @@
 /* Configuración general */
 body {
-    background-image: url('Onlyfans-Logo-2016.png');
-    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
     font-family: 'Poppins', sans-serif;
     color: #fff;
     margin: 0;
@@ -10,90 +8,34 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url('Onlyfans-Logo-2016.png'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 /* Contenedor principal */
 .container {
     text-align: center;
     padding: 30px;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.6);
     border-radius: 15px;
     max-width: 600px;
     margin: 0 auto;
     box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
-}
-
-/* Logo */
-.logo {
-    width: 120px;
-    margin-bottom: 20px;
-}
-
-/* Título principal */
-h1 {
-    font-size: 2.5em;
-    font-weight: 600;
-    color: #FFD700;
-    margin-bottom: 5px;
-}
-
-/* Subtítulo */
-.tagline {
-    font-size: 1.2em;
-    font-weight: 300;
-    color: #ccc;
-}
-
-/* Llamada a la acción */
-.cta {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #1e88e5;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-}
-
-.cta h2 {
-    font-size: 1.8em;
-    color: #fff;
-}
-
-.cta p {
-    font-size: 1.1em;
-}
-
-.cta a {
-    background-color: #FFD700;
-    color: #222;
-}
-
-/* Beneficios exclusivos */
-.benefits {
-    margin-top: 30px;
-    padding: 20px;
-    background-color: #222;
-    border-radius: 10px;
-}
-
-.benefits h3 {
-    font-size: 1.6em;
-    color: #FFD700;
-}
-
-.benefits ul {
-    list-style: none;
-    padding: 0;
-}
-
-.benefits li {
-    font-size: 1.1em;
-    margin: 10px 0;
+    backdrop-filter: blur(10px);
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 /* Botones */
 .button {
     display: inline-block;
-    margin-top: 20px;
     padding: 12px 25px;
     background-color: #FFD700;
     color: #222;
@@ -108,11 +50,31 @@ h1 {
     transform: scale(1.1);
 }
 
-/* Instagram Button */
-.insta {
-    background-color: #e1306c;
+/* Contador */
+.countdown {
+    font-size: 1.5em;
+    margin: 20px 0;
+    color: #FFD700;
 }
 
-.insta:hover {
-    background-color: #c8235d;
+/* Formulario VIP */
+.vip-form input {
+    padding: 10px;
+    width: 80%;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.vip-form button {
+    padding: 10px;
+    background: #FFD700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.vip-form button:hover {
+    background: #c9a600;
 }
