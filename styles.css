@@ -1,0 +1,56 @@
+/* Fondo azulito */
+body {
+    background-color: #ADD8E6; /* color azul cielo */
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    text-align: center;
+}
+
+/* Estilos para el encabezado */
+.header {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Estilos para el logo de OnlyFans */
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el título */
+h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+/* Estilo para los botones */
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #1e88e5; /* Color azul */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #1565c0; /* Azul más oscuro al pasar el ratón */
+}
