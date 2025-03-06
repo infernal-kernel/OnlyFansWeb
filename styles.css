@@ -1,9 +1,8 @@
-/* Fondo azulito con imagen de OnlyFans */
+/* Configuración general */
 body {
     background-image: url('Onlyfans-Logo-2016.png');
-    background-size: cover;
-    background-position: center;
-    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    font-family: 'Poppins', sans-serif;
     color: #fff;
     margin: 0;
     padding: 0;
@@ -13,83 +12,107 @@ body {
     align-items: center;
 }
 
-/* Estilos para el contenedor principal */
+/* Contenedor principal */
 .container {
     text-align: center;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
-    border-radius: 10px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
     max-width: 600px;
     margin: 0 auto;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
 }
 
-/* Estilos para el encabezado */
-.header {
-    padding: 40px;
-}
-
-/* Logo de OnlyFans */
+/* Logo */
 .logo {
-    width: 150px;
+    width: 120px;
     margin-bottom: 20px;
 }
 
-/* Estilo para el título */
+/* Título principal */
 h1 {
     font-size: 2.5em;
-    color: #fff;
-    margin-bottom: 10px;
+    font-weight: 600;
+    color: #FFD700;
+    margin-bottom: 5px;
 }
 
-h2 {
-    font-size: 2em;
-    color: #FFD700; /* Color dorado para destacar */
+/* Subtítulo */
+.tagline {
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #ccc;
 }
 
 /* Llamada a la acción */
 .cta {
     margin-top: 20px;
     padding: 20px;
-    background-color: #1e88e5; /* Azul llamativo */
+    background-color: #1e88e5;
     border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.cta h2 {
+    font-size: 1.8em;
+    color: #fff;
 }
 
 .cta p {
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .cta a {
     background-color: #FFD700;
-    color: #333;
+    color: #222;
 }
 
-/* Botones con animaciones */
+/* Beneficios exclusivos */
+.benefits {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 10px;
+}
+
+.benefits h3 {
+    font-size: 1.6em;
+    color: #FFD700;
+}
+
+.benefits ul {
+    list-style: none;
+    padding: 0;
+}
+
+.benefits li {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+/* Botones */
 .button {
     display: inline-block;
     margin-top: 20px;
     padding: 12px 25px;
-    background-color: #1e88e5; /* Azul */
-    color: white;
+    background-color: #FFD700;
+    color: #222;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .button:hover {
-    background-color: #1565c0;
-    transform: scale(1.1); /* Efecto de hover */
+    background-color: #c9a600;
+    transform: scale(1.1);
 }
 
-/* Estilo para los testimonios */
-.testimonials {
-    margin-top: 40px;
-    padding: 20px;
-    background-color: #333;
-    border-radius: 10px;
+/* Instagram Button */
+.insta {
+    background-color: #e1306c;
 }
 
-.testimonials h3 {
-    font-size: 1.5em;
-    color: #FFD700;
+.insta:hover {
+    background-color: #c8235d;
 }
