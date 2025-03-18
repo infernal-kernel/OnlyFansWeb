@@ -8,7 +8,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('Onlyfans-Logo-2016.png'); 
+    background: linear-gradient(45deg, #ff6a00, #ee0979); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -24,25 +24,40 @@ body {
 .container {
     text-align: center;
     padding: 30px;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.7);
     border-radius: 15px;
     max-width: 600px;
     margin: 0 auto;
-    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
-    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
+    backdrop-filter: blur(12px);
     animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Logo */
+.logo {
+    max-width: 150px;
+    margin: 20px 0;
+}
+
+/* Títulos y textos */
+h1, h2, h3 {
+    font-weight: 600;
+    color: #FFD700;
+    text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.7);
 }
 
 /* Botones */
 .button {
     display: inline-block;
-    padding: 12px 25px;
+    padding: 12px 30px;
     background-color: #FFD700;
     color: #222;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
     transition: all 0.3s ease;
+    margin: 10px 0;
+    font-size: 1.1em;
 }
 
 .button:hover {
@@ -52,29 +67,63 @@ body {
 
 /* Contador */
 .countdown {
-    font-size: 1.5em;
+    font-size: 2em;
     margin: 20px 0;
     color: #FFD700;
+    text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.7);
+}
+
+/* Beneficios y testimonios */
+.benefits, .testimonials, .vip-section {
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
 }
 
 /* Formulario VIP */
 .vip-form input {
-    padding: 10px;
+    padding: 12px;
     width: 80%;
     margin-top: 10px;
     border-radius: 5px;
-    border: none;
+    border: 2px solid #FFD700;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 1.1em;
 }
 
 .vip-form button {
-    padding: 10px;
+    padding: 12px;
     background: #FFD700;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
+    font-size: 1.2em;
 }
 
 .vip-form button:hover {
     background: #c9a600;
+}
+
+/* Sección social */
+.social {
+    margin-top: 30px;
+}
+
+.insta {
+    background-color: #E4405F;
+    color: #fff;
+}
+
+.insta:hover {
+    background-color: #C13584;
 }
