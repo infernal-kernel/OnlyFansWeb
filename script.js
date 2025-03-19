@@ -1,35 +1,20 @@
 // Contador regresivo de 24 horas
 function countdown() {
-    let targetDate = localStorage.getItem('targetDate');
+    const endDate = new Date("March 31, 2025 23:59:59").getTime();
+    let now = new Date().getTime();
+    let distance = endDate - now;
 
-    if (!targetDate) {
-        targetDate = new Date();
-        targetDate.setHours(targetDate.getHours() + 24);
-        localStorage.setItem('targetDate', targetDate);
-    } else {
-        targetDate = new Date(targetDate);
+    let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+
+    if (distance < 0) {
+        clearInterval(countdown);
+        document.getElementById("timer").innerHTML = "¡Oferta expirada!";
     }
-
-    function updateTimer() {
-        let now = new Date();
-        let difference = targetDate - now;
-
-        if (difference < 0) {
-            document.getElementById("timer").innerHTML = "¡La oferta ha terminado!";
-            clearInterval(timerInterval);
-            return;
-        }
-
-        let hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
-        let minutes = Math.floor((difference / (1000 * 60)) % 60);
-        let seconds = Math.floor((difference / 1000) % 60);
-
-        document.getElementById("timer").innerHTML = `${hours}h ${minutes}m ${seconds}s`;
-    }
-
-    let timerInterval = setInterval(updateTimer, 1000);
-
-    updateTimer();
 }
-
-countdown();
+setInterval(countdown, 1000);
