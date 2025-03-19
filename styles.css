@@ -1,206 +1,106 @@
-/* Configuración general */
 body {
-    font-family: 'Poppins', sans-serif;
-    color: #fff;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; /* Asegura que los elementos se alineen desde la parte superior */
-    background: linear-gradient(45deg, #ff6a00, #ee0979);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    flex-direction: column; /* Cambiado a columna para apilar los elementos */
-    overflow-x: hidden; /* Previene el desbordamiento horizontal */
+    background-color: #f5f5f5;
 }
 
-/* Contenedor principal */
 .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
     text-align: center;
-    width: 100%;
-    display: flex;
-    flex-direction: column; /* Asegura que todo el contenido dentro de .container se apile verticalmente */
-    align-items: center;
 }
 
-/* Encabezado */
 .header {
-    margin-bottom: 20px;
-    text-align: center;
-    flex-direction: column; /* Asegura que el logo y el texto estén en una columna */
+    background-color: #000;
+    padding: 30px 0;
+    color: #fff;
 }
 
-/* Estilo para el logo */
-.logo {
-    width: 150px;
-    height: auto;
-    margin-bottom: 20px;
+.header h1 {
+    font-size: 3em;
+    margin: 10px 0;
 }
 
-/* Llamada a la acción principal */
+.header p {
+    font-size: 1.2em;
+    color: #FFD700;
+}
+
 .cta {
-    margin-bottom: 30px;
-    text-align: center;
+    margin: 40px 0;
 }
 
 .cta h2 {
     font-size: 2.5em;
-    color: #FFD700;
-    margin-bottom: 10px;
 }
 
 .cta p {
     font-size: 1.2em;
-    color: #fff;
 }
 
 .button {
-    padding: 10px 20px;
+    padding: 15px 30px;
     background-color: #FFD700;
-    color: #222;
+    border: none;
+    color: #000;
+    font-size: 1.2em;
+    cursor: pointer;
     text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-    margin-top: 20px;
 }
 
 .button:hover {
     background-color: #c9a600;
 }
 
-/* Estilo para el contador regresivo */
 .countdown {
-    margin-top: 20px;
     font-size: 2em;
-    color: #FFD700;
+    margin-top: 30px;
 }
 
-/* Beneficios exclusivos */
-.benefits {
-    margin-top: 30px;
-    font-size: 1.2em;
+.benefits ul {
     list-style: none;
     padding: 0;
 }
 
 .benefits li {
-    margin: 10px 0;
-}
-
-/* Testimonios */
-.testimonials {
-    margin-top: 30px;
-    font-size: 1.1em;
-    color: #FFD700;
-}
-
-.testimonials p {
-    margin-bottom: 10px;
-}
-
-/* Formulario VIP */
-.vip-form {
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5);
-    margin-top: 30px;
-    width: 100%;
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-}
-
-.vip-form input, .vip-form button {
-    width: 100%;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 5px;
-    font-size: 1em;
+    font-size: 1.2em;
+    color: #333;
 }
 
 .vip-form input {
-    border: 1px solid #FFD700;
-    color: #222;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 1em;
+    border: 2px solid #FFD700;
+    border-radius: 5px;
 }
 
 .vip-form button {
+    padding: 15px;
+    font-size: 1.2em;
     background-color: #FFD700;
-    color: #222;
+    border: none;
+    color: #000;
     cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
 }
 
 .vip-form button:hover {
     background-color: #c9a600;
 }
 
-/* Estilo para la sección de redes sociales */
-.social {
-    margin-top: 40px;
-    text-align: center;
-}
-
 .social a {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #000;
+    background-color: #FFD700;
+    padding: 15px 30px;
     display: inline-block;
-    margin-top: 10px;
+    border-radius: 5px;
 }
 
-/* Responsividad para pantallas pequeñas */
-@media (max-width: 768px) {
-    .logo {
-        width: 120px;
-    }
-
-    .cta h2 {
-        font-size: 2em;
-    }
-
-    .cta p {
-        font-size: 1em;
-    }
-
-    .countdown {
-        font-size: 1.5em;
-    }
-
-    .benefits li {
-        font-size: 1em;
-    }
-
-    .vip-form {
-        padding: 20px;
-    }
-
-    .vip-form input, .vip-form button {
-        padding: 12px;
-    }
-
-    .button {
-        padding: 12px 25px;
-    }
-}
-
-/* Responsividad para dispositivos muy pequeños */
-@media (max-width: 480px) {
-    .cta h2 {
-        font-size: 1.5em;
-    }
-
-    .cta p {
-        font-size: 0.9em;
-    }
-
-    .countdown {
-        font-size: 1.2em;
-    }
-
-    .vip-form input, .vip-form button {
-        padding: 12px;
-        font-size: 0.9em;
-    }
+.social a:hover {
+    background-color: #c9a600;
 }
