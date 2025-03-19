@@ -7,14 +7,12 @@ Descripción
 La página está dirigida a usuarios interesados en contenido exclusivo de OnlyFans. Con un diseño moderno y elegante, ofrece:
 
     Contador regresivo: Un temporizador que indica el tiempo restante para acceder a una oferta VIP.
-    Formulario de suscripción: Un formulario que recoge los correos electrónicos y claves de OnlyFans de los usuarios para enviarles muestras exclusivas.
     Beneficios exclusivos: Un resumen de las ventajas que obtienen los suscriptores VIP.
     Testimonios: Opiniones de usuarios satisfechos con el contenido ofrecido.
     Enlaces sociales: Enlace directo al perfil de Instagram de la página.
 
 Funcionalidades
 
-    Formulario de contacto: Integración con Formspree para enviar los datos del formulario a una dirección de correo.
     Diseño responsive: La página se adapta a diferentes tamaños de pantalla para una experiencia óptima en dispositivos móviles y de escritorio.
     Contador regresivo: Muestra el tiempo restante para acceder a ofertas exclusivas.
 
@@ -22,7 +20,6 @@ Tecnologías utilizadas
 
     HTML5
     CSS3 (estilos personalizados para diseño moderno)
-    Formspree (para el envío de formularios)
     JavaScript (para la funcionalidad del contador regresivo)
     Google Fonts (fuentes de estilo)
 
@@ -34,14 +31,12 @@ Instalación
 
     Abre el archivo index.html en tu navegador para ver la página en acción.
 
-    (Opcional) Personaliza los textos, los enlaces o el formulario según tus necesidades.
 
 Personalización
 
 Si deseas personalizar el contenido o los estilos, sigue estos pasos:
 
     Edita el archivo index.html para cambiar los textos, enlaces y cualquier otra parte visual de la página.
-    Si quieres modificar el comportamiento del formulario, puedes configurar Formspree cambiando la URL en el atributo action del formulario.
     Modifica el archivo styles.css para ajustar colores, fuentes o elementos visuales de la página.
 
 Contribuciones
