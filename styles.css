@@ -7,19 +7,22 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Asegura que los elementos se alineen desde la parte superior */
     background: linear-gradient(45deg, #ff6a00, #ee0979);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    flex-direction: column; /* Añadido para asegurar el layout vertical */
+    flex-direction: column; /* Cambiado a columna para apilar los elementos */
+    overflow-x: hidden; /* Previene el desbordamiento horizontal */
 }
 
-/* Estilo del contenedor principal */
+/* Contenedor principal */
 .container {
     text-align: center;
-    padding: 30px;
     width: 100%;
+    display: flex;
+    flex-direction: column; /* Asegura que todo el contenido dentro de .container se apile verticalmente */
+    align-items: center;
 }
 
 /* Encabezado */
