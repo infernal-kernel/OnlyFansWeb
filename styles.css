@@ -8,42 +8,30 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(45deg, #ff6a00, #ee0979); 
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    flex-direction: column; /* Añadido para asegurar el layout vertical */
 }
 
-/* Animaciones */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-/* Contenedor principal */
+/* Estilo del contenedor principal */
 .container {
     text-align: center;
     padding: 30px;
+    width: 100%;
 }
 
-/* Estilo general */
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #222;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-}
-
-/* Contenedor general */
+/* Encabezado */
 .header {
     margin-bottom: 20px;
     text-align: center;
+    flex-direction: column; /* Asegura que el logo y el texto estén en una columna */
 }
 
 /* Estilo para el logo */
 .logo {
-    width: 200px;
+    width: 150px;
     height: auto;
     margin-bottom: 20px;
 }
@@ -51,6 +39,7 @@ body {
 /* Llamada a la acción principal */
 .cta {
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .cta h2 {
@@ -86,7 +75,7 @@ body {
     color: #FFD700;
 }
 
-/* Estilo para los beneficios */
+/* Beneficios exclusivos */
 .benefits {
     margin-top: 30px;
     font-size: 1.2em;
@@ -118,6 +107,8 @@ body {
     margin-top: 30px;
     width: 100%;
     max-width: 600px;
+    display: flex;
+    flex-direction: column;
 }
 
 .vip-form input, .vip-form button {
@@ -148,9 +139,65 @@ body {
 /* Estilo para la sección de redes sociales */
 .social {
     margin-top: 40px;
+    text-align: center;
 }
 
 .social a {
     display: inline-block;
     margin-top: 10px;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .logo {
+        width: 120px;
+    }
+
+    .cta h2 {
+        font-size: 2em;
+    }
+
+    .cta p {
+        font-size: 1em;
+    }
+
+    .countdown {
+        font-size: 1.5em;
+    }
+
+    .benefits li {
+        font-size: 1em;
+    }
+
+    .vip-form {
+        padding: 20px;
+    }
+
+    .vip-form input, .vip-form button {
+        padding: 12px;
+    }
+
+    .button {
+        padding: 12px 25px;
+    }
+}
+
+/* Responsividad para dispositivos muy pequeños */
+@media (max-width: 480px) {
+    .cta h2 {
+        font-size: 1.5em;
+    }
+
+    .cta p {
+        font-size: 0.9em;
+    }
+
+    .countdown {
+        font-size: 1.2em;
+    }
+
+    .vip-form input, .vip-form button {
+        padding: 12px;
+        font-size: 0.9em;
+    }
 }
