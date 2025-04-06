@@ -1,0 +1,21 @@
+{
+  "name": "Exclusive OnlyFans Content",
+  "short_name": "OnlyFans VIP",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#222222",
+  "theme_color": "#FFD700",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/6e/OnlyFans_logo_2021.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/6e/OnlyFans_logo_2021.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
