@@ -5,7 +5,7 @@ const urlsToCache = [
   '/onlyfans/styles.css',
   '/onlyfans/script.js',
   '/onlyfans/manifest.json',
-  'https://upload.wikimedia.org/wikipedia/commons/6/6e/OnlyFans_logo_2021.png'
+  'https://github.com/infernal-kernel/OnlyFansWeb/blob/aec4382b5c1cda551beacaceae6a7d6fd4d3f67b/Onlyfans-Logo-2016.png'
 ];
 
 self.addEventListener('install', event => {
