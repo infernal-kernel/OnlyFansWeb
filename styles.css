@@ -19,3 +19,119 @@ body {
     background-position: -1000px 0;
   }
 }
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3 {
+  color: #FFD700;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 25px;
+  margin: 10px;
+  background-color: #FFD700;
+  color: #222;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #c9a600;
+}
+
+.countdown {
+  font-size: 1.8em;
+  margin: 30px 0;
+}
+
+.benefits ul {
+  list-style: none;
+  padding: 0;
+}
+
+.benefits li {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+.testimonials {
+  margin-top: 30px;
+}
+
+.testimonials p {
+  margin-bottom: 10px;
+}
+
+.vip-form {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 30px auto;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+}
+
+.vip-form input, .vip-form button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 1em;
+  border: 1px solid #FFD700;
+}
+
+.vip-form button {
+  background-color: #FFD700;
+  color: #222;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.vip-form button:hover {
+  background-color: #c9a600;
+}
+
+.social a {
+  margin: 5px;
+}
+
+/* 🔁 Responsive para móviles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .cta h2 {
+    font-size: 1.5em;
+  }
+
+  .button {
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+
+  .countdown {
+    font-size: 1.3em;
+  }
+
+  .vip-form {
+    padding: 20px;
+  }
+
+  .vip-form input, .vip-form button {
+    font-size: 1em;
+  }
+}
