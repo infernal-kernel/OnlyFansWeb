@@ -1,19 +1,20 @@
 {
   "name": "Exclusive OnlyFans Content",
-  "short_name": "OnlyFans VIP",
+  "short_name": "OnlyFansVIP",
+  "description": "Accede a contenido premium y exclusivo en OnlyFans.",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#222222",
   "theme_color": "#FFD700",
-  "orientation": "portrait",
+  "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "https://github.com/infernal-kernel/OnlyFansWeb/blob/aec4382b5c1cda551beacaceae6a7d6fd4d3f67b/Onlyfans-Logo-2016.png",
+      "src": "images/onlyfans-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "https://github.com/infernal-kernel/OnlyFansWeb/blob/aec4382b5c1cda551beacaceae6a7d6fd4d3f67b/Onlyfans-Logo-2016.png",
+      "src": "images/onlyfans-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
