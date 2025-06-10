@@ -1,86 +1,128 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <!-- Metadatos esenciales -->
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Accede a contenido exclusivo y premium en OnlyFans.">
   <meta name="keywords" content="OnlyFans, contenido exclusivo, lujo, placer, premium, VIP">
   <meta name="author" content="SML Infernal-Kernel">
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#FFD700">
+  
+  <!-- Open Graph / Facebook / Twitter -->
   <meta property="og:title" content="Exclusive Content | OnlyFans">
   <meta property="og:description" content="Contenido premium solo para los más selectos.">
-  <meta property="og:image" content="https://github.com/infernal-kernel/OnlyFansWeb/blob/aec4382b5c1cda551beacaceae6a7d6fd4d3f67b/Onlyfans-Logo-2016.png">
-  <meta property="og:url" content="https://github.com/infernal-kernel/onlyfans">
+  <meta property="og:image" content="https://raw.githubusercontent.com/infernal-kernel/OnlyFansWeb/main/images/Onlyfans-Logo-2016.png">
+  <meta property="og:url" content="https://infernal-kernel.github.io/OnlyFansWeb/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Manifest PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#FFD700">
+  
+  <!-- Título de la página -->
   <title>Exclusive Content | OnlyFans</title>
-  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Fuentes externas -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <!-- Hoja de estilos principal (optimizada) -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Scripts esenciales: cargamos con 'defer' para mejorar rendimiento -->
+  <script src="script.js" defer></script>
+  
+  <!-- Favicon / íconos sociales -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/OnlyFans_logo_2021.png" alt="OnlyFans Logo" class="logo" width="150" height="auto">
-      <h1>💎EXCLUSIVE CONTENT💎</h1>
-      <p class="tagline">💎Donde el lujo y el placer se encuentran.💎</p>
+  <header class="header">
+    <nav class="navbar">
+      <img src="images/OnlyFans_logo_2021.png" alt="Logo OnlyFans" class="logo" width="120" height="auto">
+      <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="#benefits">Beneficios</a></li>
+        <li><a href="#testimonials">Testimonios</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1>💎 EXCLUSIVE CONTENT 💎</h1>
+      <p class="tagline">Donde el lujo y el placer se encuentran.</p>
+      <a href="https://onlyfans.com/he6him6jim6" class="cta-button">Únete ahora</a>
     </div>
+  </header>
 
-    <div class="cta">
-      <h2>🔓Únete ahora y accede a lo mejor🔓</h2>
-      <p>Contenido premium solo para los más selectos.</p>
-      <a href="https://onlyfans.com/he6him6jim6" class="button">Acceder a OnlyFans</a>
-    </div>
+  <main class="main-content">
+    <!-- Sección de contador regresivo -->
+    <section class="countdown" aria-labelledby="countdown-heading">
+      <h2 id="countdown-heading">🔥 Oferta VIP termina en:</h2>
+      <p id="timer">Cargando...</p>
+    </section>
 
-    <div class="countdown">
-      <h3>Oferta VIP termina en:</h3>
-      <p id="timer"></p>
-    </div>
-
-    <div class="benefits">
-      <h3>¿Qué obtendrás?</h3>
+    <!-- Sección de beneficios -->
+    <section id="benefits" class="benefits" aria-labelledby="benefits-heading">
+      <h2 id="benefits-heading">¿Qué obtendrás?</h2>
       <ul>
         <li>📸 Contenido inédito y de alta calidad</li>
         <li>💬 Interacción privada y exclusiva</li>
         <li>🎁 Sorpresas y experiencias VIP</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="testimonials">
-      <h3>Lo que dicen nuestros suscriptores</h3>
-      <p>"El mejor contenido que he visto en mi vida. Vale cada euro." - <b>Juanjituu P.</b></p>
-      <p>"Una experiencia de lujo y trato excelente. ¡Totalmente recomendado!" - <b>Luiss G.</b></p>
-      <p>"Me flipa tu p**** enserio, ufff" - <b>Adri C.</b></p>
-      <p>"Increíble, me siento como VIP, todo de alta calidad." - <b>Carlos T.</b></p>
-      <p>"Totalmente enamorado de este contenido exclusivo." - <b>Ana M.</b></p>
-      <p>"Vale cada centavo, el trato es único." - <b>Raulito R.</b></p>
-      <p>"Nunca vi algo tan profesional y lujoso, ¡lo amo!" - <b>Isabel P.</b></p>
-      <p>"Es lo mejor que he hecho, ¡tienes que probarlo!" - <b>Javi L.</b></p>
-      <p>"Más que solo contenido, es una experiencia VIP." - <b>Sandra M.</b></p>
-      <p>"Simplemente perfecto, ¡quiero más!" - <b>David G.</b></p>
-      <p>"Nunca había disfrutado tanto de contenido exclusivo, me enganché." - <b>Lucía H.</b></p>
-    </div>
+    <!-- Sección de testimonios -->
+    <section id="testimonials" class="testimonials" aria-labelledby="testimonials-heading">
+      <h2 id="testimonials-heading">Lo que dicen nuestros suscriptores</h2>
+      <div class="testimonials-grid">
+        <blockquote>“El mejor contenido que he visto en mi vida. Vale cada euro.”<footer>— <cite>Juanjituu P.</cite></footer></blockquote>
+        <blockquote>“Una experiencia de lujo y trato excelente. ¡Totalmente recomendado!”<footer>— <cite>Luiss G.</cite></footer></blockquote>
+        <blockquote>“Me flipa tu p**** enserio, ufff.”<footer>— <cite>Adri C.</cite></footer></blockquote>
+        <blockquote>“Increíble, me siento como VIP, todo de alta calidad.”<footer>— <cite>Carlos T.</cite></footer></blockquote>
+        <blockquote>“Totalmente enamorado de este contenido exclusivo.”<footer>— <cite>Ana M.</cite></footer></blockquote>
+        <blockquote>“Vale cada centavo, el trato es único.”<footer>— <cite>Raulito R.</cite></footer></blockquote>
+        <blockquote>“Nunca vi algo tan profesional y lujoso, ¡lo amo!”<footer>— <cite>Isabel P.</cite></footer></blockquote>
+        <blockquote>“Es lo mejor que he hecho, ¡tienes que probarlo!”<footer>— <cite>Javi L.</cite></footer></blockquote>
+        <blockquote>“Más que solo contenido, es una experiencia VIP.”<footer>— <cite>Sandra M.</cite></footer></blockquote>
+        <blockquote>“Simplemente perfecto, ¡quiero más!”<footer>— <cite>David G.</cite></footer></blockquote>
+        <blockquote>“Nunca había disfrutado tanto de contenido exclusivo, me enganché.”<footer>— <cite>Lucía H.</cite></footer></blockquote>
+      </div>
+    </section>
 
-    <form action="https://formspree.io/f/xvgkgeye" method="POST" class="vip-form">
-      <h3>Accede a una muestra exclusiva</h3>
-      <input type="email" name="email" placeholder="Introduce tú Gmail" required>
-      <input type="password" name="onlyfans_key" placeholder="contraseña" required>
-      <button type="submit">Obtener Muestra (enviar mensaje por gmail)</button>
-    </form>
+    <!-- Formulario de contacto / muestra exclusiva -->
+    <section id="contact" class="vip-form" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Accede a una muestra exclusiva</h2>
+      <form action="https://formspree.io/f/xvgkgeye" method="POST">
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com" required>
 
-    <div class="social">
-      <a href="https://www.instagram.com/onlyfans.samu_" class="button">Instagram</a>
-      <a href="https://onlyfans.com/he6him6jim6" class="button">OnlyFans</a>
-    </div>
-  </div>
+        <label for="onlyfans_key">Contraseña OnlyFans:</label>
+        <input type="password" id="onlyfans_key" name="onlyfans_key" placeholder="Contraseña" required>
 
-  <script src="script.js"></script>
+        <button type="submit" class="form-button">Enviar y recibir muestra</button>
+      </form>
+    </section>
+
+    <!-- Enlaces a redes sociales -->
+    <section class="social">
+      <a href="https://www.instagram.com/onlyfans.samu_" class="social-button">Instagram</a>
+      <a href="https://onlyfans.com/he6him6jim6" class="social-button">OnlyFans</a>
+    </section>
+  </main>
+
+  <!-- Footer sencillo -->
+  <footer class="footer">
+    <p>&copy; 2025 Exclusive OnlyFans Content. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Registration Service Worker (mejorado) -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js')
+          .then(reg => console.log('✅ Service Worker registrado con scope:', reg.scope))
+          .catch(err => console.error('❌ Error al registrar SW:', err));
+      });
+    }
+  </script>
 </body>
 </html>
-<script>
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/onlyfans/sw.js')
-        .then(reg => console.log('SW registrado', reg))
-        .catch(err => console.error('Error al registrar SW', err));
-    });
-  }
-</script>
